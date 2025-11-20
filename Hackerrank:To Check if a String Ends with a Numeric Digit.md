@@ -23,8 +23,20 @@ To write a Python program that checks if a given string ends with a number using
 ---
 
 ## 💻  Program
-Add Code here
+```
+import re
+s=input()
+p='[a-zA-Z0-9]*[0-9]+'
+x=re.match(p,s)
+if x:
+ print("True")
+else:
+ print("False")
+```
 
 ## Output
+<img width="181" height="105" alt="image" src="https://github.com/user-attachments/assets/884ab228-d933-49f1-a0d6-0910419d0e01" />
 
 ## Result
+Thus the python program for checking the string end with number or not has been implemented and
+executed successfully.
