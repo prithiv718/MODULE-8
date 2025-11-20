@@ -19,9 +19,30 @@ To write a Python program that takes a list of scores from participants and find
 ---
 
 ## 💻 PROGRAM:
-
-ADD CODE HERE
+```
+l1=[]
+l2=[]
+for _ in range(int(input())):
+ name = input()
+ score = float(input())
+ l1.extend([name,score])
+ l2.append(l1)
+ l1=[]
+l3=[]
+l4=[]
+for i in l2:
+ l3.append(i[1])
+l3.sort()
+for i in l2:
+ if i[1]==l3[1]:
+ l4.append(i[0])
+l4.sort()
+for i in l4:
+ print(i)
+```
 
 ## OUTPUT
+<img width="221" height="238" alt="image" src="https://github.com/user-attachments/assets/27c840d9-c550-4442-b220-3f83fa44722b" />
 
 ## RESULT
+Thus the python program for finding the students with second lowest grade has been implemented and executed successfully.
